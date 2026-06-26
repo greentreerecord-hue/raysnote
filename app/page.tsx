@@ -1,16 +1,9 @@
-import "./globals.css";
-
-export const metadata = {
-  title: "Ray'snote",
-  description: "Ray'snote online publishing",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function Home() {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <main className="page">
+      <h1>Ray'snote</h1>
+      <p>Independent online publishing for news, stories, and creative voices.</p>
+      <button>Subscribe</button>
+    </main>
   );
 } 
