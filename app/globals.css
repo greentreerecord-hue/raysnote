@@ -1,35 +1,29 @@
-const articles = [
-  "Breaking News",
-  "Business",
-  "Technology",
-  "Entertainment",
-  "Opinion",
-  "Creator Spotlight",
-];
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
 
-export default function Home() {
-  return (
-    <main className="page">
-      <section className="hero">
-        <h1>Ray'snote</h1>
-        <p>
-          Independent online publishing for news, stories, business,
-          entertainment, technology, and creative voices.
-        </p>
-        <button>Subscribe</button>
-      </section>
+.page {
+  min-height: 100vh;
+  padding: 40px;
+}
 
-      <section>
-        <h2>Latest Articles</h2>
-        <div className="grid">
-          {articles.map((title) => (
-            <article className="card" key={title}>
-              <h3>{title}</h3>
-              <p>Original stories and features from Ray'snote.</p>
-            </article>
-          ))}
-        </div>
-      </section>
-    </main>
-  );
+h1 {
+  color: #facc15;
+  font-size: 52px;
+}
+
+p {
+  font-size: 22px;
+}
+
+button {
+  background: #facc15;
+  color: black;
+  border: 0;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: bold;
 } 
