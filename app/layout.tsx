@@ -1,19 +1,19 @@
+import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ray'sStream",
-  description: "Ray'sStream",
+  title: "Ray'snote",
+  description: "Independent online publishing platform",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
   );
 } 
-
