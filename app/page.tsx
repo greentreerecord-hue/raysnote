@@ -1,54 +1,22 @@
 export default function Home() {
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "#0f172a",
-        color: "#ffffff",
-        fontFamily: "Arial, sans-serif",
-        textAlign: "center",
-        padding: "2rem",
-      }}
-    >
-      <h1
-        style={{
-          color: "#facc15",
-          fontSize: "4rem",
-          marginBottom: "1rem",
-        }}
-      >
-        Ray'snote
-      </h1>
+    <main style={{
+      minHeight: "100vh",
+      background: "#050505",
+      color: "white",
+      padding: "40px",
+      fontFamily: "Arial"
+    }}>
+      <h1 style={{ fontSize: "48px" }}>Ray'sStream</h1>
+      <p style={{ fontSize: "20px" }}>Website is working.</p>
 
-      <p
-        style={{
-          fontSize: "1.25rem",
-          maxWidth: "700px",
-          marginBottom: "2rem",
-        }}
+      <video
+        controls
+        width="100%"
+        style={{ maxWidth: "800px", marginTop: "30px" }}
       >
-        Welcome to Ray'snote, your independent online publishing platform.
-      </p>
-
-      <button
-        style={{
-          background: "#facc15",
-          color: "#000",
-          border: "none",
-          borderRadius: "10px",
-          padding: "14px 28px",
-          fontSize: "18px",
-          fontWeight: "bold",
-          cursor: "pointer",
-        }}
-      >
-        Subscribe
-      </button>
+        <source src="/videos/video1.mp4" type="video/mp4" />
+      </video>
     </main>
   );
 } 
-
