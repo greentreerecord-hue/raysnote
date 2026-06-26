@@ -1,10 +1,5 @@
 import "./globals.css";
 
-export const metadata = {
-  title: "Ray'snote",
-  description: "Independent online publishing by Ray'snote",
-};
-
 export default function RootLayout({
   children,
 }: {
