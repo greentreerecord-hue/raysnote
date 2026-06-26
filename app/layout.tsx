@@ -1,20 +1,14 @@
 import "./globals.css";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Ray'snote",
-  description: "Independent online publishing platform",
+  description: "Ray'snote online publishing",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head />
-      <body>{children}</body>
+      <body>{props.children}</body>
     </html>
   );
 } 
